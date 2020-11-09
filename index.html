@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vending Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class= "Vending-Machine">
+    <h1>Vending Machine</h1>
+    <div class="textbox">
+<span>50c</span><input type="text" name ="50cs" Id= "50cs" placeholder="0" value="0" oninput="tally()"/>
+</div><br>
+<div class="textbox">
+<span>R1</span><input type="text" name ="r1s" Id= "r1s" placeholder="0" value="0" oninput="tally()"/>
+</div><br>
+<div class="textbox">
+<span>R2</span><input type="text" name ="r2s" Id= "r2s" placeholder="0" value="0" oninput="tally()"/>
+</div><br>
+<div class="textbox">
+<span>R5</span><input type="text" name ="r5s" Id= "r5s" placeholder="0" value="0" oninput="tally()"/>
+</div> <br>
+    </form>
+    <button class= "btn" value ="Coke" Id ="code" onclick="dispenseItem(0)">Coke</button>
+    <button class= "btn" value ="Juice" Id ="juice"onclick="dispenseItem(1)">Juice</button>
+    <button class= "btn" value ="Lollipop" Id ="lollipop"onclick="dispenseItem(2)">Lollipop</button>
+    <button class= "btn" value ="Doritos" Id ="doritos"onclick="dispenseItem(3)">Doritos</button>
+    <br> <br> 
+
+    <button class= "btn" value ="Cancel" Id ="cancel" onclick="cancel()">Cancel</button>
+   
+    <h2>Total Entered: R<span id= "paid">0.00</span> </h2>
+
+    <h2 id="message">Insert money first, then select an item.</h2>
+    
+    <script> src="vending.js"</script>
+</body>
+</html>
